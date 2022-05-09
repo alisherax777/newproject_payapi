@@ -16,10 +16,45 @@ body {
   font-family: 'Public Sans', sans-serif;
 }
 
+body .link-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 173px;
+  height: 48px;
+  background-color: #BA4270;
+  -webkit-box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+          box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  border-radius: 24px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+body .link-btn:hover {
+  -webkit-transform: scale(1.035, 1.035);
+          transform: scale(1.035, 1.035);
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+body .link-btn p {
+  font-family: 'Public Sans';
+  font-weight: 700;
+  font-size: 15px;
+  color: #FBFCFE;
+}
+
 body header {
   width: 100%;
   height: 740px;
   padding-top: 50px;
+  background-color: #F2F2F2;
 }
 
 body header nav {
@@ -35,6 +70,7 @@ body header nav {
   max-width: 1110px;
   height: 50px;
   margin: 0 auto;
+  margin-bottom: 75px;
 }
 
 body header nav .navbar {
@@ -59,6 +95,9 @@ body header nav .navbar .navbar-links {
       flex-shrink: 1;
   height: 20px;
   gap: 40px;
+}
+
+body header nav .navbar .navbar-links .link-items {
   font-family: 'Public Sans';
   font-weight: 700;
   font-size: 15px;
@@ -67,28 +106,100 @@ body header nav .navbar .navbar-links {
   opacity: 0.7;
 }
 
-body header nav .navbar .link-btn {
+body header nav .navbar .navbar-links .link-items:hover {
+  color: #030838;
+}
+
+body header .middle-blog {
+  max-width: 1100px;
+  height: 500px;
+  margin: 0 auto;
+  background-color: blueviolet;
+}
+
+body header .middle-blog .blog-item {
+  max-width: 1000px;
+  height: 100%;
+  background-color: #42baba;
+}
+
+body header .middle-blog .blog-item .blog-info {
+  width: 550px;
+  height: 345px;
+  background-color: #F2F2F2;
+}
+
+body header .middle-blog .blog-item .blog-info .info-text {
+  font-family: 'DM Serif Display';
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 72px;
+  letter-spacing: -0.553846px;
+  color: #36536B;
+  margin-bottom: 21px;
+}
+
+body header .middle-blog .blog-item .blog-info form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 173px;
-  height: 48px;
-  background-color: #BA4270;
+  width: 445px;
+  height: 50px;
+  border-radius: 24px;
+  background: #FBFCFE;
   -webkit-box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
           box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
-  border-radius: 24px;
+  margin-bottom: 20px;
 }
 
-body header nav .navbar .link-btn p {
+body header .middle-blog .blog-item .blog-info form input {
+  width: 268px;
+  height: 50px;
+  border: 0;
+  border-radius: 24px;
+  padding-left: 20px;
+  background-color: #F2F2F2;
+  padding-left: 20px;
   font-family: 'Public Sans';
   font-weight: 700;
   font-size: 15px;
-  color: #FBFCFE;
+}
+
+body header .middle-blog .blog-item .blog-info form input:placeholder-shown {
+  padding-left: 20px;
+  font-family: 'Public Sans';
+  font-weight: 700;
+  font-size: 15px;
+  color: #36536B;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  border: 0;
+}
+
+body header .middle-blog .blog-item .blog-info form input:hover {
+  cursor: pointer;
+}
+
+body header .middle-blog .blog-item .blog-info .question {
+  padding-left: 20px;
+  font-family: 'Public Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  /* identical to box height */
+  color: #36536B;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+}
+
+body header .middle-blog .blog-item .blog-info .question span {
+  color: #030838;
 }
 /*# sourceMappingURL=media.css.map */
