@@ -1,0 +1,94 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 65px;
+    width: 100%;
+    height: 100px;
+    background-image: url(../img/circle3.svg);
+    background-repeat: no-repeat;
+    background-position: right ;
+    background-color: #1B262F;
+
+    .footer-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 910px;
+        height: 100px;
+        img {
+            height: 100px;
+        }
+        .navbar-links {
+            display: flex;
+            gap: 40px;
+            .link-items {
+                font-family: 'Public Sans';
+                font-weight: 700;
+                font-size: 15px;
+                color: #FBFCFE;
+                mix-blend-mode: normal;
+                opacity: 0.7;
+                transition-duration: .12s;
+                &:hover {
+                    opacity: 1;
+                    transition-duration: .12s;
+                }
+            }
+            
+        }
+        .nav-icons {
+            display: flex;
+            justify-content: space-between;
+            width: 120px;
+            height: 26px;
+            i {
+                font-size: 23px;
+                color: #FFFFFF;
+                transition-duration: .2s;
+                &:hover {
+                    font-size: 25px;
+                    transition-duration: .2s;
+                    color:#BA4270;
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width:1300px) {
+    footer {
+    .footer-item {
+        width: 490px;
+    }
+    }  
+}
+@media only screen and (min-width: 375px) and (max-width:767px) , (max-width:375px) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        gap: 40px;
+        height: 353px;
+        background-image: url(../img/circle2.svg);
+        background-position: center bottom;
+        background-size: contain;
+        
+        .footer-item {
+            flex-direction: column;
+            align-items: center;
+            width: 120px;
+            height: 180px;
+            .navbar-links {
+                flex-direction: column;
+                gap: 30px;
+                width: 58px;
+                height: 115px;
+
+            }
+
+
+        }
+    }
+}
